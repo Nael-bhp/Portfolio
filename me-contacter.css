@@ -44,4 +44,5 @@ main div a{
     display: block;
     border-radius: 50%;
     padding: 0;
+    overflow: hidden;
 }

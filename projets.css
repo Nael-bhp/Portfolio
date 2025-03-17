@@ -21,6 +21,7 @@ main div div{
 .image_proj img{
     width: 300px;
     border-radius: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
 .projet{
@@ -53,5 +54,4 @@ figure a{
 
 .image_proj img:hover{
     transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
 }
