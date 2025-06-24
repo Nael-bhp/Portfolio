@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon année à l'international</title>
+  <link rel="stylesheet" href="commun.css">
+  <link rel="stylesheet" href="international.css">
+</head>
+
+<body>
+  <!-- HEADER identique aux autres pages -->
+  
+<header>
+  <nav>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+
+    <ul>
+      <li ><a href="index.html" data-close>Accueil</a></li>
+      <li><a href="qui-suis-je.html" data-close>Qui suis-je ?</a></li>
+      <li class="dropdown">
+  <a href="projets.html">Mes projets</a>
+  <ul class="dropdown-content">
+    <li><a href="mes-projets-detailles.html">Projets détaillés</a></li>
+  </ul>
+</li>
+
+      <li class="actif"><a href="international.html" data-close>Mon année à l'international</a></li>
+      <li><a href="me-contacter.html" data-close>Me contacter</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+  <main>
+
+    
+
+
+    <div id="burger-menu">
+  <button id="burger-toggle">&#9776;</button>
+  <nav id="side-menu" class="closed">
+    <ul>
+      <li><a href="#contexte">Contexte</a></li>
+      <li><a href="#competences">Compétences transversales</a></li>
+      <li><a href="#projets">Projets</a></li>
+    <li><a href="#bilan_personnel">Bilan personnel</a></li>
+
+    </ul>
+  </nav>
+</div>
+
+
+
+
+    <h1>Mon année à l'international</h1>
+
+    <section>
+      <h1 id="contexte">Contexte de l’échange</h1>
+      <p>
+        Durant ma 3e année de BUT Informatique, j’ai eu l’opportunité d’effectuer un échange universitaire au Canada, à l’UQAC (Université du Québec à Chicoutimi), dans le cadre d’un programme d’échange international.
+      </p>
+      <p>
+        Ce séjour, qui s’est déroulé de septembre à avril, m’a permis de découvrir un nouvel environnement académique, culturel et linguistique tout en poursuivant ma formation informatique.
+      </p>
+    </section> <hr> 
+
+   <section>
+  <h1 id="competences">Compétences transversales développées</h1>
+
+  <p>
+    Mon semestre d’échange universitaire au Canada ne m’a pas seulement permis de renforcer mes compétences techniques, il m’a surtout poussé à grandir humainement. Voici les compétences transversales que j’ai consolidées ou développées durant cette période :
+  </p>
+
+  <ul>
+    <li>
+      <strong>Ouverture d’esprit</strong> — La découverte d’un nouveau système éducatif, de nouvelles méthodes d’évaluation, et le contact quotidien avec des étudiants de cultures différentes m’ont permis d’adopter un regard plus large sur ma discipline et sur le monde.
+    </li>
+    <li>
+      <strong>Tolérance culturelle</strong> — J’ai appris à mieux comprendre et accepter les différences de communication, de rythme ou de priorités culturelles, notamment dans les travaux d’équipe internationaux.
+    </li>
+    <li>
+      <strong>Adaptabilité</strong> — Face à des méthodes d’enseignement différentes, une organisation autonome du travail, et parfois un changement de langue, j’ai su rapidement m’ajuster aux nouvelles attentes.
+    </li>
+    <li>
+      <strong>Autonomie</strong> — Vivre seul à l’étranger, gérer mon budget, organiser mes études, mes déplacements et mes démarches m’a donné une grande confiance dans ma capacité à être indépendant.
+    </li>
+    <li>
+      <strong>Sens des relations interpersonnelles</strong> — J’ai participé à plusieurs événements associatifs, collaboré avec des camarades locaux sur des projets et créé des liens durables avec d’autres étudiants internationaux.
+    </li>
+    <li>
+      <strong>Résilience</strong> — Face à l’éloignement familial, à l’hiver québécois ou à certaines difficultés administratives, j’ai appris à rester positif et à gérer les imprévus avec calme et efficacité.
+    </li>
+    <li>
+      <strong>Communication en anglais</strong> — Bien que les cours étaient en français, de nombreuses interactions (forums, activités, projets techniques) se faisaient en anglais, ce qui a renforcé ma capacité à échanger dans cette langue.
+    </li>
+    <li>
+      <strong>Gestion du temps</strong> — Jongler entre les cours, les projets, les découvertes culturelles et les obligations personnelles m’a permis de mieux planifier, hiérarchiser et gérer mes priorités.
+    </li>
+  </ul>
+
+  <p>
+    Ces expériences transversales m'ont transformé, et me seront utiles dans tous mes futurs environnements professionnels, en particulier dans les métiers collaboratifs, internationaux ou en cybersécurité.
+  </p>
+</section> <hr>
+
+
+    <section>
+      <h1 id="projets">Projets réalisés sur place</h1>
+      <p>
+        Pendant ce séjour, j’ai participé à plusieurs projets encadrés à l’UQAC. Voici quelques exemples :
+      </p>
+
+
+
+
+
+      <section>
+              <h1>S5</h1>
+
+  <h2>Projets réalisés en cours de Cloud</h2>
+
+  <p>
+    Le cours de Cloud à l’UQAC visait à nous initier aux principes d’<strong>infrastructure as code (IaC)</strong>, de <strong>déploiement automatisé</strong> et de <strong>services serverless</strong> à travers des mises en pratique sur la plateforme Azure. J’ai ainsi participé à deux projets structurants qui m’ont permis de consolider ma compréhension des architectures Cloud modernes.
+  </p>
+
+  <h3>Projet 1 — Déploiement d’une infrastructure évolutive sur Azure</h3>
+  <p>
+    Ce premier projet consistait à concevoir et déployer une infrastructure complète sur Azure, avec les exigences suivantes :
+  </p>
+  <ul>
+    <li>Création d’un <strong>Load Balancer</strong> distribuant le trafic entre deux <strong>machines virtuelles</strong>, chacune hébergeant un site web</li>
+    <li>Déploiement des VM sur différentes <strong>zones de disponibilité</strong> pour garantir la résilience</li>
+    <li>Configuration de l’<strong>auto-scaling</strong> basé sur la charge CPU (> 50 % pendant 5 minutes)</li>
+    <li>Utilisation d’un <strong>Azure Key Vault</strong> pour gérer les secrets de manière sécurisée</li>
+    <li>Création de <strong>pipelines CI/CD</strong> pour la compilation, la validation et le déploiement automatisé de l’infrastructure</li>
+    <li>Utilisation combinée de <strong>GitHub</strong> et <strong>Azure DevOps</strong> avec un board de gestion de tâches</li>
+  </ul>
+  <p>
+    Le code de déploiement a été entièrement versionné et documenté (fichiers JSON, PowerShell, XAML). Ce projet m’a permis de développer une maîtrise pratique de la création d’architectures distribuées, résilientes et scalables dans Azure.
+  </p>
+
+  <h3>Projet 2 — Traitement d’images automatisé avec Azure Functions</h3>
+  <p>
+    Le second projet nous a fait explorer le modèle serverless à travers une solution de traitement d’images totalement automatisée :
+  </p>
+  <ul>
+    <li>Déclenchement d’une <strong>Azure Function</strong> lors du dépôt d’un fichier image dans un <em>Storage Account</em></li>
+    <li>Envoi du nom de l’image dans une <strong>Azure Bus Queue</strong></li>
+    <li>Déclenchement d’une deuxième Function à partir de la queue, qui effectuait une <strong>transformation sur l’image</strong> (ex. redimensionnement ou ajout de watermark)</li>
+    <li>Déplacement de l’image modifiée dans un conteneur final et suppression de l’original</li>
+    <li>Implémentation de <strong>pipelines DevOps</strong> pour automatiser le processus de build, de test et de déploiement</li>
+  </ul>
+  <p>
+    Ce projet m’a permis d’acquérir des compétences pratiques en <strong>fonctionnement événementiel (event-driven)</strong>, <strong>file de messages</strong>, <strong>intégration de services Azure</strong>, et <strong>sécurité cloud</strong>, dans une architecture légère et automatisée.
+  </p>
+  <p>
+    Ensemble, ces deux projets m'ont donné une vision complète des pratiques cloud actuelles, m'ont familiarisé avec les outils d'automatisation, et m'ont permis de développer une approche rigoureuse et collaborative du travail en environnement distribué.
+  </p>
+</section> <hr> 
+
+<section>
+  <h2>Projets réalisés en Systèmes d’exploitation (8INF342)</h2>
+
+  <p>
+    Dans ce cours, j’ai mené trois projets pratiques orientés bas niveau en C++, permettant d'explorer des notions avancées comme le multithreading, la synchronisation, et la gestion de la mémoire virtuelle. Ces projets m'ont permis de renforcer ma maîtrise des interactions entre les programmes utilisateurs et le système d'exploitation.
+  </p>
+
+  <h3>Laboratoire 1 – Compréhension et simulation d’ordonnancement</h3>
+  <p>
+    Ce premier projet consistait à étudier les algorithmes d’ordonnancement de processus sous Linux. À travers des expériences pratiques, j’ai comparé les politiques comme Round-Robin, FIFO et SJF. Le projet m’a permis de mieux comprendre les conséquences des priorités, des temps de quantum, et de l’équité des processus sur les performances globales du système.
+  </p>
+
+  <h3>Laboratoire 2 – Création d’un système multi-threads avec synchronisation</h3>
+  <p>
+    Dans un contexte simulé de développement de jeux vidéo, j’ai développé un système multithreadé en C++ où chaque thread représente un créateur d’objets complexes composés de ressources partagées (comme “or” et “bois”). Grâce à l’utilisation fine des <strong>mutex</strong> et d’un design sans interblocage ni famine, j’ai assuré que chaque thread accède aux ressources de manière exclusive et coordonnée. Le projet incluait :
+  </p>
+  <ul>
+    <li>Synchronisation rigoureuse avec plusieurs mutex</li>
+    <li>Gestion de ressources limitées en évitant l’interblocage</li>
+    <li>Affichage en temps réel des états des threads et enregistrement dans un fichier</li>
+    <li>Contrôle du nombre minimum d’objets créés (10 par type)</li>
+  </ul>
+
+  <h3>Laboratoire 3 – Simulateur de mémoire virtuelle</h3>
+  <p>
+    Ce projet visait à créer un simulateur complet de mémoire virtuelle en C++, en traitant la traduction d’adresses logiques en adresses physiques avec table de pages et TLB. J’ai mis en œuvre les concepts suivants :
+  </p>
+  <ul>
+    <li>Traduction des adresses logiques sur 16 bits avec extraction page/offset</li>
+    <li>Table de pages contenant 256 entrées et un TLB de 16 entrées</li>
+    <li>Gestion de la mémoire secondaire via un fichier binaire</li>
+    <li>Implémentation d’un algorithme de remplacement LRU dans le TLB</li>
+    <li>Calcul du taux de défauts de page et du taux de succès du TLB</li>
+    <li>Génération d’un fichier de sortie listant les traductions et valeurs mémoire</li>
+  </ul>
+
+  <p>
+    Ces trois laboratoires m'ont permis de consolider ma compréhension des couches basses du système, d’écrire un code rigoureux en C++ multi-threadé et de manipuler des structures de données propres aux OS comme les TLB, PTE et files d’attente.
+  </p>
+</section> <hr> 
+
+<section>
+  <h2>Projets réalisés en Sécurité des Réseaux et du Web (8INF138)</h2>
+
+  <p>
+    Ce cours a permis d’approfondir les fondamentaux de la cybersécurité à travers trois travaux pratiques appliqués, mêlant programmation réseau, chiffrement, et techniques de stéganographie. Ces projets ont été l’occasion d’explorer les menaces réseau et les moyens de protection en conditions réelles.
+  </p>
+
+  <h3>TP1 – Scanner de ports TCP (CLI)</h3>
+  <p>
+    Développement d’un scanner de ports TCP en ligne de commande, capable de détecter les ports ouverts d’une machine cible (adresse IP ou domaine). Le projet incluait :
+  </p>
+  <ul>
+    <li>Utilisation de sockets TCP pour sonder les ports réservés</li>
+    <li>Détection et gestion des erreurs (nom de domaine invalide, absence de paramètre, interruption manuelle)</li>
+    <li>Affichage dynamique des ports ouverts</li>
+    <li>Version bonus multi-threadée pour accélérer le scan</li>
+  </ul>
+
+  <h3>TP2 – Gestionnaire de mots de passe sécurisé</h3>
+  <p>
+    Réalisation d’une application CLI de gestion des mots de passe avec chiffrement et authentification, en Python. Ce gestionnaire permettait d’enregistrer, consulter et protéger les mots de passe via :
+  </p>
+  <ul>
+    <li>Chiffrement du mot de passe principal avec SHA-256 et sel cryptographique</li>
+    <li>Chiffrement des mots de passe utilisateurs avec AES-256</li>
+    <li>Génération de clé AES via PBKDF2 (HMAC-SHA256, 100k itérations)</li>
+    <li>Stockage sécurisé des données via SQLite + gestion des variables d’environnement</li>
+    <li>Fonctionnalités de sécurité : vérification d’identité, gestion des accès non autorisés</li>
+  </ul>
+
+  <h3>TP3 – Application de stéganographie</h3>
+  <p>
+    Conception d’un programme en ligne de commande capable de cacher et révéler des messages secrets dans des images PNG par la technique de <em>Least Significant Bit (LSB)</em>. Le projet couvrait :
+  </p>
+  <ul>
+    <li>Manipulation des pixels d’images (RGB) pour modifier les bits de poids faible</li>
+    <li>Encodage binaire d’un message texte dans une image source</li>
+    <li>Extraction fiable du message caché depuis l’image générée</li>
+    <li>Respect des formats et contraintes (PNG uniquement, pas de bibliothèque simplificatrice type <code>stegano</code>)</li>
+  </ul>
+
+  <p>
+    Ces projets m’ont permis de consolider mes compétences en sécurité réseau, en développement Python, et en cryptographie appliquée, tout en adoptant une approche rigoureuse de la programmation sécurisée.
+  </p>
+</section> <hr> 
+
+<section>
+  <h2>Projet de gestion – TRMS (Transports Saguenay)</h2>
+
+  <p>
+    Dans le cadre du cours 8GIF147 – Gestion de production dans l’industrie du numérique, notre équipe a conçu un projet nommé <strong>TRMS</strong> visant à améliorer l’expérience des usagers des transports publics à Saguenay. Ce projet s’articulait autour de la création d’une application mobile et web intuitive, intégrant des fonctionnalités comme le suivi GPS des bus en temps réel, la récupération des horaires via API, et le calcul des émissions de CO₂ évitées.
+  </p>
+
+  <h3>Objectifs du projet</h3>
+  <ul>
+    <li>Réduire les retards et erreurs de planification grâce à des données actualisées</li>
+    <li>Offrir une interface claire adaptée à tous les profils (étudiants, personnes âgées, PMR)</li>
+    <li>Favoriser l’usage des transports en commun par des fonctionnalités de sensibilisation écologique</li>
+  </ul>
+
+  <h3>Approche méthodologique</h3>
+  <p>
+    Le projet a été géré selon les principes de l’<strong>agilité</strong>, en s’appuyant sur le cadre <strong>Scrum</strong>. J'avais pour role Scrum Master,  organisant les réunions de suivi, les rétrospectives et la coordination. Les utilisateurs ont été modélisés sous forme de <strong>personas</strong> et les besoins traduits en <strong>user stories</strong>, priorisées via la méthode <strong>MoSCoW</strong> et évaluées avec la technique du <strong>Planning Poker</strong>.
+  </p>
+
+  <h3>Outils utilisés</h3>
+  <ul>
+    <li><strong>Whimsical</strong> – pour la création des maquettes d’interface</li>
+    <li><strong>Trello</strong> – pour la gestion du Product Backlog et des sprints</li>
+    <li><strong>Google Docs / Sheets</strong> – pour la rédaction et le suivi collaboratif</li>
+  </ul>
+
+  <h3>Travail en équipe</h3>
+  <p>
+    Notre équipe de six membres s’est répartie les rôles entre développement front/back, UI/UX, gestion technique et coordination. Des réunions régulières avec le commanditaire (STS – Société de Transport du Saguenay) ont permis d’ajuster les priorités et de valider les livrables.
+  </p>
+
+  <h3>Livrables réalisés</h3>
+  <ul>
+    <li>Documentation complète du projet (vision, exigences, rôles, personas)</li>
+    <li>Maquettes interactives de l’interface (mobile & desktop)</li>
+    <li>Backlog complet avec user stories priorisées et estimées</li>
+    <li>Release Planning et découpage en sprints</li>
+  </ul>
+
+  <p>
+    Ce projet m’a permis de développer mes compétences en <strong>gestion agile</strong>, <strong>structuration d’équipe</strong>, <strong>communication projet</strong> et <strong>modélisation fonctionnelle</strong> dans un contexte réaliste et pluridisciplinaire.
+  </p>
+</section> <hr> 
+
+
+</section> 
+
+
+          <h1>Semestre 6 - international</h1>
+          
+
+          <section id="news15">
+  <h2>Cybersécurité (8SEC201)</h2>
+
+  <h3>TP1 – Sécurité Linux : Variables d’environnement et Set-UID</h3>
+  <p>
+    Ce projet consistait à explorer les mécanismes de sécurité dans les systèmes Linux, en particulier les risques liés à l’utilisation des programmes <strong>Set-UID</strong>. J’ai expérimenté la manipulation de variables d’environnement (comme <code>LD_PRELOAD</code> et <code>PATH</code>) pour comprendre comment un attaquant peut détourner un programme mal protégé.
+  </p>
+  <p>
+    Ce TP m’a permis de :
+  </p>
+  <ul>
+    <li>Comprendre les vulnérabilités liées à la mauvaise gestion des privilèges</li>
+    <li>Tester l’injection de bibliothèques et la redirection de chemins systèmes</li>
+    <li>Identifier les bonnes pratiques pour sécuriser un programme avec droits d’administration</li>
+  </ul>
+
+  <h3>TP2 – Analyse de vulnérabilités avec Tenable Nessus</h3>
+  <p>
+    Ce projet avait pour objectif de découvrir et évaluer les vulnérabilités à l’aide de l’outil <strong>Nessus</strong>. J’ai réalisé un scan sur plusieurs machines d’un réseau virtuel, puis :
+  </p>
+  <ul>
+    <li>Créé un rapport CSV des vulnérabilités détectées</li>
+    <li>Formé une <strong>chaîne de vulnérabilités</strong> en combinant deux failles</li>
+    <li>Évalué le score CVSS global et recherché des <strong>mesures correctives</strong> via la base NVD</li>
+    <li>Proposé des recommandations de <strong>patch management</strong> basées sur les bonnes pratiques</li>
+  </ul>
+  <p>
+    Ce TP m’a permis de mettre en pratique les étapes d’une démarche d’<strong>évaluation de la surface d’attaque</strong>, avec un raisonnement analytique et orienté gestion du risque.
+  </p>
+
+  <h3>TP3 – Détection d’attaques par force brute avec Wazuh (SIEM)</h3>
+  <p>
+    L’objectif était de simuler une attaque par <strong>force brute SSH</strong> et d’observer sa détection dans un environnement de type <strong>SIEM</strong> à l’aide de Wazuh. En configurant deux VMs (attaquant / victime), j’ai :
+  </p>
+  <ul>
+    <li>Utilisé Hydra pour simuler une attaque par mot de passe (SSH brute force)</li>
+    <li>Configuré Wazuh pour collecter et corréler les logs du système cible</li>
+    <li>Filtré les alertes liées à l’attaque et identifié les <strong>règles de détection</strong> déclenchées</li>
+    <li>Corrélé les événements avec des techniques du <strong>framework MITRE ATT&CK</strong></li>
+  </ul>
+  <p>
+    Ce projet m’a initié à la logique de la détection d’incidents en temps réel, à la <strong>corrélation d’événements</strong> et à l’<strong>analyse post-attaque</strong> dans un cadre professionnel.
+  </p>
+</article>
+
+<hr> 
+
+<article id="news16">
+  <h2>Développement Android – MoveTrack (8INF257)</h2>
+
+  <p>
+    Dans le cadre du cours de développement mobile, j’ai contribué au projet <strong>MoveTrack</strong>, une application Android innovante permettant de <strong>reconnaître les mouvements d’un utilisateur</strong> (marche, course, arrêt...) à partir des données issues des capteurs du téléphone. Bien que le cœur algorithmique de reconnaissance (intelligence artificielle et intégration capteurs) ait été préconstruit, notre travail s’est concentré sur la conception d’une <strong>interface moderne, intuitive et accessible</strong>.
+  </p>
+
+  <h3>Objectifs du projet</h3>
+  <ul>
+    <li>Améliorer l’<strong>expérience utilisateur</strong> à travers un design clair et ergonomique</li>
+    <li>Définir et organiser les écrans de navigation (accueil, historique, alertes, préférences...)</li>
+    <li>Rendre l’application <strong>responsive et fluide</strong>, y compris pour les utilisateurs novices</li>
+    <li>Valoriser les données issues de la détection (mouvements, alertes déclenchées) dans une interface conviviale</li>
+  </ul>
+
+  <h3>Technologies et design</h3>
+  <ul>
+    <li>Développement de l’UI en <strong>Jetpack Compose</strong>, suivant les principes du Material Design</li>
+    <li>Architecture <strong>MVVM</strong> assurant la séparation des responsabilités</li>
+    <li>Utilisation de composants dynamiques (listes réactives, badges d’alerte...)</li>
+    <li>Tests sur simulateur et appareils réels pour garantir la cohérence graphique</li>
+  </ul>
+
+  <h3>Aspects techniques intégrés</h3>
+  <p>
+    Bien que fournis, les modules de traitement des <strong>données capteur</strong> (accéléromètre, gyroscope) et de <strong>prédiction par intelligence artificielle</strong> (modèle embarqué) ont été étudiés pour en assurer la bonne intégration fonctionnelle et visuelle. Nous avons ainsi adapté notre interface à la structure des données générées, et géré les retours en temps réel pour une expérience utilisateur cohérente.
+  </p>
+
+  <p>
+    Ce projet m’a permis de renforcer mes compétences en <strong>développement mobile UX/UI</strong>, en collaboration agile, et en prise en compte des besoins utilisateurs dès la conception.
+  </p>
+</article>
+
+<hr> 
+
+<article id="news17">
+  <h2>Projet de cybersécurité : Attaques contre les systèmes d’IA (8CLD201)</h2>
+
+  <p>
+    Ce projet avait pour objectif d’explorer les failles de sécurité propres aux systèmes d’intelligence artificielle, en particulier les modèles de langage de grande taille (LLM). Nous avons mené une analyse des principales menaces, testé leur mise en œuvre via un modèle local, et proposé des pistes de protection.
+  </p>
+
+  <h3>Travail réalisé</h3>
+  <ul>
+    <li>Revue des attaques typiques : <strong>prompt injection</strong>, <strong>extraction de données sensibles</strong>, <strong>empoisonnement de données d'entraînement</strong></li>
+    <li>Utilisation du modèle <strong>LLaMA 3.2</strong> hébergé en local avec <strong>Ollama</strong> pour conduire des tests d’exploitation dans un cadre éthique</li>
+    <li>Simulation de tentatives de contournement de filtres ou de production de contenus non souhaités (scripts de phishing, exemples de keylogger)</li>
+    <li>Analyse de l’efficacité des garde-fous et des mécanismes de modération embarqués dans le modèle</li>
+  </ul>
+
+  <h3>Résultats et apports</h3>
+  <p>
+    Ces expérimentations ont mis en lumière la facilité avec laquelle certaines attaques peuvent être mises en œuvre, même avec des modèles restreints localement. Le projet a permis d’illustrer les limites actuelles de la sécurité “by default” dans les LLMs open-source, et la nécessité d’ajouter des mécanismes de surveillance et de filtrage côté utilisateur.
+  </p>
+
+  <p>
+    Une réflexion a également été menée sur les enjeux <strong>éthiques et juridiques</strong> de l’usage de l’IA dans des contextes sensibles (cybersécurité, automatisation, désinformation), et sur la responsabilité des développeurs dans l’intégration de garde-fous techniques.
+  </p>
+
+  <h3>Compétences mobilisées</h3>
+  <ul>
+    <li>Expérimentation encadrée d’attaques de type LLM</li>
+    <li>Utilisation d’un modèle open-source IA local (Ollama + LLaMA)</li>
+    <li>Analyse critique des réponses générées et des filtres internes</li>
+    <li>Rédaction d’un rapport technique avec préconisations de sécurité</li>
+    <li>Prise en compte des aspects éthiques et des responsabilités de l’ingénieur</li>
+  </ul>
+</article>
+
+<hr> 
+
+<article id="news18">
+  <h2>Projet de Modélisation Objet (8INF334)</h2>
+
+  <p>
+    Dans le cadre du cours de Modélisation Objet, j’ai conçu une application permettant de détecter les étudiants n’étant pas autorisés à suivre un cours en raison de leur statut « SI » (scolarité impayée ou irrégulière). Le projet a été réalisé en suivant les principes de la méthodologie <strong>Scrum</strong>, et comprenait la planification complète d’un développement logiciel, de l’analyse des besoins à la mise en œuvre partielle en Java.
+  </p>
+
+  <h3>Travail réalisé</h3>
+  <ul>
+    <li>Rédaction des objectifs et spécifications du système</li>
+    <li>Identification des cas d’utilisation et modélisation UML : diagrammes de cas d’utilisation, classes, séquence, activité</li>
+    <li>Construction du backlog produit et sprint, avec priorisation des tâches (MoSCoW)</li>
+    <li>Planification temporelle par diagramme de Gantt</li>
+    <li>Implémentation Java de la méthode <code>detectetudiantNA()</code> : comparaison des données biométriques scannées (image + empreinte) avec celles enregistrées à l’admission</li>
+    <li>Traitement des statuts et notification du professeur via Outlook en cas de détection</li>
+  </ul>
+
+  <h3>Compétences mobilisées</h3>
+  <ul>
+    <li>Modélisation UML avancée (classes, séquence, activité)</li>
+    <li>Conception orientée objet (Java)</li>
+    <li>Planification agile avec Scrum : backlog, sprints, estimation</li>
+    <li>Respect des bonnes pratiques de conception logicielle</li>
+    <li>Communication technique et structuration documentaire</li>
+  </ul>
+
+  <p>
+    Ce projet m’a permis de lier rigueur de conception, gestion de projet agile et implémentation concrète dans un cadre réaliste et professionnalisant.
+  </p>
+</article>
+
+<hr> 
+<article id="news19">
+  <h2>Analyse statistique des données de masse (8STT108)</h2>
+  <p>
+    Ce cours visait à maîtriser des techniques avancées d’analyse de données, en mettant l’accent sur la modélisation, la validation et l’interprétation des résultats dans un contexte de données volumineuses. Deux projets marquants ont rythmé la session.
+  </p>
+
+  <h3>Projet 1 – Étude des facteurs associés à la dépression étudiante</h3>
+  <p>
+    À partir d’un jeu de données réel et multivarié, nous avons cherché à identifier les variables les plus corrélées à des signes de dépression chez les étudiants. Le travail s’est déroulé en plusieurs étapes :
+  </p>
+  <ul>
+    <li>Nettoyage et transformation des variables (binaires, ordinales, catégorielles)</li>
+    <li>Analyse exploratoire des données (corrélations, matrices de dispersion)</li>
+    <li>Application de modèles de <strong>régression logistique</strong> et <strong>régression linéaire multiple</strong></li>
+    <li>Utilisation de modèles d’<strong>arbres de décision</strong> et de <strong>forêts aléatoires</strong> pour le classement et la sélection des variables</li>
+    <li>Évaluation via validation croisée, précision, et courbes ROC</li>
+  </ul>
+  <p>
+    Ce projet a permis de dégager les principaux facteurs prédictifs de détresse psychologique, tout en illustrant les limites de certains modèles face à des données déséquilibrées.
+  </p>
+
+  <h3>Projet – Analyse des facteurs associés à la dépression étudiante</h3>
+<p> Ce projet avait pour objectif d’identifier les principaux facteurs corrélés à la dépression chez les étudiants à partir d’un large jeu de données réel. 
+  L’analyse a mobilisé des techniques avancées d’exploration, de modélisation et de validation statistique. </p>
+   <h4>Démarche et techniques mobilisées</h4> 
+   <ul> <li>Prétraitement des données : nettoyage, transformation de variables catégorielles, binarisation</li> 
+    <li>Analyse exploratoire : <strong>corrélations croisées</strong>, <strong>visualisation de matrices</strong></li>
+     <li>Modélisation par <strong>régression linéaire multiple</strong> pour prédire le score de dépression</li> <li>Classification par <strong>régression logistique</strong>, <strong>arbre de décision</strong>, et <strong>forêt aléatoire</strong></li> 
+     <li>Comparaison des modèles via <strong>validation croisée</strong> et <strong>analyse de performance (accuracy, Kappa)</strong></li> 
+    </ul>
+     <h4>Résultats clés</h4> 
+     <ul> <li>Les facteurs les plus prédictifs sont la <strong>pression académique</strong>, les <strong>pensées suicidaires</strong>, le <strong>nombre d’heures d’étude</strong>, et l’<strong>alimentation</strong></li> 
+      <li>La <strong>régression logistique</strong> a atteint un taux de justesse de 84,6 %</</li>
+       <li>La <strong>forêt aléatoire</strong> a montré une précision similaire avec une meilleure stabilité sur les jeux de test</li>
+        <li>L’évaluation par validation croisée (10-fold) a permis de confirmer la robustesse du modèle lasso et du random forest</li> </ul> 
+        <h4>Recommandations issues de l’étude</h4>
+         <ul> <li>Mettre en place un accompagnement psychologique pour les étudiants avec antécédents familiaux ou signes de détresse</li> 
+          <li>Limiter la pression académique excessive par une meilleure gestion des charges de cours</li>
+           <li>Encourager une alimentation saine et un sommeil régulier</li> </ul> 
+           <h3>Compétences mobilisées</h3> <ul> <li>Préparation de jeux de données complexes et bruités</li> <li>Utilisation de <strong>modèles linéaires et non linéaires</strong> pour la prédiction</li> <li>Implémentation de méthodes <strong>de rééchantillonnage</strong> (bootstrap, validation croisée)</li> <li>Maîtrise de <strong>R</strong> pour l’analyse, la modélisation et la visualisation</li> <li>Interprétation critique des résultats et formulation de <strong>préconisations concrètes</strong></li> </ul>
+</article>
+
+<hr>
+
+
+<section>
+  <h2 id="bilan_personnel">Bilan personnel</h2>
+  <p>
+    Cette immersion à l’international a renforcé ma capacité d’adaptation, mon autonomie et ma rigueur dans un contexte d’apprentissage exigeant. J’y ai développé une meilleure gestion du temps, une communication interculturelle plus fine, et un sens accru des responsabilités. Confronté à des méthodes pédagogiques différentes et à des situations nouvelles, j’ai su maintenir un haut niveau d’implication et de fiabilité. Ce séjour a renforcé ma confiance en moi et ma motivation à évoluer dans des environnements techniques internationaux.
+  </p>
+</section> 
+
+
+
+  </main>
+
+  <script>
+  const toggle = document.getElementById('burger-toggle');
+  const menu = document.getElementById('side-menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+
+  // Fermer le menu quand on clique sur un lien
+  document.querySelectorAll('#side-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('open');
+    });
+  });
+</script>
+
+  
+</body>
+</html>

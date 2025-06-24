@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Menu Burger Scroll</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: row;
+    }
+
+    #burger-toggle {
+      display: none;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1001;
+      padding: 10px 15px;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: #dce7e9;
+      cursor: pointer;
+    }
+
+    aside {
+      flex-basis: 250px;
+      background-color: #dce7e9;
+      padding: 20px;
+      height: 100vh;
+    }
+
+    aside nav a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    aside nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    aside nav ul li {
+      margin: 5px 0;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 30px;
+    }
+
+    section {
+      margin-bottom: 80px;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      background-color: #f7f7f7;
+    }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+      body {
+        flex-direction: column;
+      }
+
+      #burger-toggle {
+        display: block;
+      }
+
+      aside {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 20px;
+        width: 260px;
+        height: auto;
+        z-index: 1000;
+        border-radius: 15px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      aside.open {
+        display: block;
+        background-color: #dce7e9;
+      }
+
+      main {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button id="burger-toggle">☰</button>
+
+  <aside id="menu">
+    <nav>
+      <a href="#top">Retour en haut</a>
+      <details>
+        <summary>Section 1</summary>
+        <ul>
+          <li><a href="#section1">Lien A</a></li>
+          <li><a href="#section2">Lien B</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>Section 2</summary>
+        <ul>
+          <li><a href="#section3">Lien C</a></li>
+        </ul>
+      </details>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="section1">
+      <h2>Section 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet neque libero. Morbi at sem ut odio luctus convallis.</p>
+      <p>Aliquam erat volutpat. In lacinia sem at justo egestas, et fermentum ipsum volutpat.</p>
+    </section>
+
+    <section id="section2">
+      <h2>Section 2</h2>
+      <p>Fusce congue ex at libero pulvinar, ac laoreet justo bibendum. Duis et laoreet enim.</p>
+      <p>Integer mattis, purus ut cursus ultrices, sem magna laoreet orci, id tincidunt urna est nec justo.</p>
+    </section>
+
+    <section id="section3">
+      <h2>Section 3</h2>
+      <p>Donec lacinia vestibulum purus non consequat. Praesent facilisis fringilla massa. Nunc ultricies nunc vel posuere congue.</p>
+      <p>Etiam quis sapien eget purus fermentum congue. Aenean dignissim nisl sit amet diam fringilla, vel tempor nunc malesuada.</p>
+    </section>
+  </main>
+
+  <script>
+    const burgerButton = document.getElementById('burger-toggle');
+    const menu = document.getElementById('menu');
+    const links = menu.querySelectorAll('a');
+
+    burgerButton.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth < 800) {
+          menu.classList.remove('open');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

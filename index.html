@@ -7,16 +7,29 @@
       <link rel="stylesheet" href="index.css">
     </head>
 
+    <script>
+  document.querySelectorAll('[data-close]').forEach(link => {
+    link.addEventListener('click', () => {
+      const toggle = document.getElementById('nav-toggle');
+      if (toggle && toggle.checked) {
+        toggle.checked = false;
+      }
+    });
+  });
+</script>
+
+
     <body>
 
         <!-- 
           Barre de navigation principale.
           À noter : le lien actif contient un nom de classe "actif"
         -->
+           <!-- 
       <header>
         <nav>
           <ul>
-            <li><a class="actif" href="index.html">Accueil</a></li>
+            <li class="actif" > <a  href="index.html">Accueil</a></li>
             <li><a href="qui-suis-je.html">Qui-suis-je ?</a></li>
             <li class="dropdown">
               <a href="projets.html">Mes projets</a>
@@ -24,10 +37,36 @@
                 <a href="mes-projets-detailles.html">Mes projets détaillés</a>
               </div>
             </li>
+            <li><a href="annee-internationale.html">Mon année à l'internationale</a></li>
             <li><a href="me-contacter.html">Me contacter</a></li>
           </ul>
         </nav>
       </header>
+            -->
+
+<header>
+  <nav>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+
+    <ul>
+      <li class="actif"><a href="index.html" data-close>Accueil</a></li>
+      <li><a href="qui-suis-je.html" data-close>Qui suis-je ?</a></li>
+      <li class="dropdown">
+  <a href="projets.html">Mes projets</a>
+  <ul class="dropdown-content">
+    <li><a href="mes-projets-detailles.html">Projets détaillés</a></li>
+  </ul>
+</li>
+
+      <li><a href="international.html" data-close>Mon année à l'international</a></li>
+      <li><a href="me-contacter.html" data-close>Me contacter</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
 
       <main>
         <h1>Bienvenue sur mon portfolio</h1>
